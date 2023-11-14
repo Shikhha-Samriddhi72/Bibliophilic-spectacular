@@ -1,40 +1,54 @@
 <!DOCTYPE html>
-<html lang="en"
-
+<html lang="en">
 <head>
-    <meta charset="UTF-18">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/custom.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.
+    cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.
+    min.css" integrity="sha512-xh60/
+    CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN98m
+    amE+4aHKByyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="main">
-        <div class="box">
-            <h2 id="quesBox">1) This is the Dummy Question</h2>
-            <div class="row">
-                <input class="Options" id="Option1" type="radio" value="a" name="Option" />
-                <label for="Option 1"> </label> Option 1</label>
-            </div>
-            <div class="row">
-                <input class="Options" id="Option2" type="radio" value="b" name="Option"/>
-                <label for="Option 2"> </label> Option 2</label>
-            </div>
-            <div class="row">
-                <input class="Options" id="Option3" type="radio" value="c" name="Option"/>
-                <label for="Option 3"> </label> Option 3</label>
-            </div>
-            <div class="row">
-                <input class="Options" id="Option4" type="radio" value="d" name="Option"/>
-                <label for="Option 4"> </label> Option 4</label>
-            </div>
-            <button class="btn" onclick="submitQuiz()">
-                 Submit
-            </button>
+
+    <div class="container">
+        <div class="title">
+            <h1>Temperature Converter</h1>
+            <span class="Temperature-icon"><i
+            class="fa-solid 
+            fa-temperature-list"></i></span>
         </div>
     </div>
-    <script src="js/app.js"></script>
-</body>
+    <div id="celcius">
+        <input type="number" name=""
+        placeholder="Celcius">
+        <span class="icon">&#8451</span>
+    </div>
+    <div id="Fahrenheit">
+        <input type="number" name=""
+        placeholder="Fahrenheit">
+        <span class="icon">&#8457</span>
+    </div>
+    <div id="Kelvin">
+        <input type="number" name=""
+        placeholder="Kelvin">
+        <span class="icon">&#8490</span>
+    </div>
 
+    <div class="button">
+        <button>All Clear</button>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
 </html>

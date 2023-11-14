@@ -1,98 +1,49 @@
-     const questions = [
-    {
-        'que': 'Which of the following is a Markup Language ?',
-        'a': 'PHP',
-        'b': 'JavaScript',
-        'c': 'HTML',
-        'd': 'CSS'
-        'correct': 'c',
-    },
-    {   'que': "What does CSS stand for ?",
-        'a': "Computational Style Sheet",
-        'b': "Computer Source Sheet",
-        'c': "Cascade Style Sheet",
-        'd': "Hyper Text Transmission Protocol",
-        'correct': "c"
-    },
-    {
-        'que': "What year was Javascript launched ?",
-        'a': "1995",
-        'b': "1998",
-        'c': "1994",
-        'd': "None Of These",
-        'correct': "a"
-    },
-    {
-        'que': "What is the full form of HTML ?",
-        'a': "Hyper Text Transmission Protocol",
-        'b': "Hyper Text Markup Language",
-        'c': "Helicopters Terminals Motorboats Lamborginis",
-        'd': "None Of The Above",
-        'correct': "b",
-    }
+ let celciusInput = document.querySelector('#celcius >  input')
+ let fahrenheitInput = document.querySelector("#fahrenheit > input")
+ let kelvinInput = document.querySelector('#kelvin > input')
 
-]
-let index = 0;
-let total = questions.length;
-let right = 0;
-    wrong = 0;
-const quesBox =  document.getElementById("quesBox")
-const optionInputs = document.querySelectorAll('.options')
-const loadQuestion = () => {
-    if(index === total) {
-        return endQuiz()
-    }
-    reset();
-    const data = questions[index]
-    console.log(data)
-    quesBox.innerText = ' ${index+1}) ${data.que}';
-    optionInputs[0].nextElementSibling.innerText = data.a;
-    optionInputs[1].nextElementSibling.innerText = data.b;
-    optionInputs[2].nextElementSibling.innerText = data.c;
-    optionInputs[3].nextElementSibling.innerText = data.d;
-}
+ let btn = document.querySelector('.button button')
 
-const submitQuiz = () => {
-    const data = question[index];
-    const ans = getAnswer()
-    console.log(ans, data.correct)
-    if (ans === data.correct) {
-       right++;
-    }else{
-       wrong++;
-    }
-    index++;
-    loadQuestion();
-    return;
-}
 
-const getAnswer = () => {
-    let answer; 
-    optionInputs.forEach(
-        (input) => {
-            if (input.checked) {
-                answer = input.value;
-            }   
-        } 
-    )
-    return answer;
-}
+ function roundnumber(number){
+    return Math.round(number*100)/100
+ })
 
-const reset = () => {
-    optionInputs.forEach(
-        (input) => {
-            input.checked = false   
-       }
-    )
-}    
 
-const endQuiz = () => {
-    document.getElementById("box").innerHTML = '
-    <div style"text-align:center">
-        <h3> Thank You For Participating in the Quiz</h3>
-        <h2> ${right} / ${total} are correct </h2>
-    </div>
-    '
-}
-// initial call
-loadQuestion();
+ /* Celcius to Fahrenheit and Kelvin */
+ celciusInput.addEventListener('click', function(){
+      let cTemp = parseFloat(celciusInput.value)
+      let ftemp = (ctemp*(9/5)) * 32
+      let ktemp = cTemp * 273.15
+
+      fahrenheitInput.value = roundnumber(fTemp)
+      kelvinInput.value = roundNumber(kTemp)
+ })
+
+
+ /* Fahrenheit to Celcius and Kelvin */
+ fahrenheitInput.addEventListener('input', function(){
+     let fTemp = parseFloat(fahrenheitInput.value)
+     let cTemp = (fTemp - 32) * (5/9)
+     let kTemp = (fTemp - 32) * (5/9) + 273.15
+
+     fahrenheitInput.value = roundNumber(cTemp)
+     kelvinInput.value = roundNumber(kTemp)
+ })
+
+/* Kelvin to Celcius and Fahrenheit */
+fahrenheitInput.addEventListener('input', function(){
+    let kTemp = parseFloat(kelvinInput.value)
+    let cTemp = kTemp - 273.15
+    let fTemp = (kTemp - 273.15) * (9/5) + 32
+
+    celciusInput.value = roundNumber(cTemp)
+    fahrenheitInput.value = roundNumber(fTemp)
+})
+
+
+btn.addEventListener('click', ()=>{
+    celciusInput.value = ""
+    fahrenheitInput.value = ""
+    kelvinInput.value = ""
+})

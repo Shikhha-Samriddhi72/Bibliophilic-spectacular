@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link type="text/css" href="style.css" rel="stylesheet">
+        <script src="javascript.js"></script>
+    </head>
+
+<body>
+<div id="mainbody">
+    <div>
+        <input type="text" id="screen">
+    </div>
+    <div class="but">
+        <div class="row">
+            <button onclick="clrdisp()">C</button>
+            <button onclick="del()">D</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(7)">7</button>
+            <button onclick="clk(8)">8</button>
+            <button onclick="clk(9)">9</button>
+            <button onclick="clk('/')">/</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(4)">4</button>
+            <button onclick="clk(5)">5</button>
+            <button onclick="clk(6)">6</button>
+            <button onclick="clk('*')">X</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(1)">1</button>
+            <button onclick="clk(2)">2</button>
+            <button onclick="clk(3)">3</button>
+            <button onclick="clk('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="clk(0)">0</button>
+            <button onclick="clk('.')">.</button>
+            <button onclick="eql('=')">=</button>
+            <button onclick="clk('+')">+</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

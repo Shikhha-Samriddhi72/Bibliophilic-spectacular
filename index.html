@@ -1,26 +1,40 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en"
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-18">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website HTML CSS Only | Codehal</title>
-    <link re:="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 
 <body>
-
-    <header class="header">
-        <a href="a" class="logo">Smriti.</a>
-
-        <nav class="navbar">
-            <a href="a">Home</a>
-            <a href="a">About</a>
-            <a href="a">Services</a>
-            <a href="a">Portfolio</a>
-            <a href="a">Contact</a>
-        </nav>
-
-    </header>
+    <div class="main">
+        <div class="box">
+            <h2 id="quesBox">1) This is the Dummy Question</h2>
+            <div class="row">
+                <input class="Options" id="Option1" type="radio" value="a" name="Option" />
+                <label for="Option 1"> </label> Option 1</label>
+            </div>
+            <div class="row">
+                <input class="Options" id="Option2" type="radio" value="b" name="Option"/>
+                <label for="Option 2"> </label> Option 2</label>
+            </div>
+            <div class="row">
+                <input class="Options" id="Option3" type="radio" value="c" name="Option"/>
+                <label for="Option 3"> </label> Option 3</label>
+            </div>
+            <div class="row">
+                <input class="Options" id="Option4" type="radio" value="d" name="Option"/>
+                <label for="Option 4"> </label> Option 4</label>
+            </div>
+            <button class="btn" onclick="submitQuiz()">
+                 Submit
+            </button>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
 </body>
+
+</html>

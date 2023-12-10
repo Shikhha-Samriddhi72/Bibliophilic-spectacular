@@ -1,64 +1,417 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In and Sign Up Form </title>
-    <link rel="stylesheet" href="style. css">
-    <script src=""https://kit.fontawesome.com/c4254e24a8.js crossorigin="anonymous"></script>
+    <title>BLOG WEBSITE</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 <body>
-<div class="container">
-    <div class="form-box">
-        <h1>Sign Up</h1>
-        <form>
-            <div class="input-group">
-                <div class="input-field">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Name">
-                </div>
-
-                <div class="input-field">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email">
-
-                <div class="input-field">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Password">
-                </div>
-                <p>Forgot Password <a href="#">Click Here </a></p>
-            </div>
-            <div class="btn-field">
-                <button type="button" id="signUpBtn">Sign Up</button>
-                <button type="button" id="signinBtn" class="disable">Sign In</button>
-            </div>
-        </form>
+    <!-- Header-->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+        <!-- Logo -->
+        <a href="#" class="logo">Fash<span>Livy</span>Vlogs</a>
+        <!-- Login Btn -->
+        <a href="#" class="login">Login</a>
     </div>
-</div>
 
-<script>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Vlogging Lifestyle</h2>
+            <span class="home-subtitle">The Source Of All Sorts Of Great Live Content </span>
+        </div>
+    </section>
+    <!-- Post Filter -->
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filters="all">All</span>
+        <span class="filter-item " data-filters="Design">Design</span>
+        <span class="filter-item " data-filters="tech">Tech</span>
+        <span class="filter-item " data-filters="Mobile">Mobile</span>
+        <span class="filter-item " data-filters="fashion">Fashion</span>
+        <span class="filter-item " data-filters="lifestyle">Lifestyle</span>      
+        <span class="filter-item " data-filters="business">Business</span>
+        <span class="filter-item " data-filters="travel">Travel</span>
+        <span class="filter-item " data-filters="food">Food</span>
+    </div>
+    <!-- Posts -->
+    <section class="post container">
+        <!-- Post Box  1 -->
+        <div class="post-box design">
+            <img src="images/post-1.jpg" alt="" class="post-img">
+            <h2 class="category">Design</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  2 -->
+        <div class="post-box">
+            <img src="images/post-2.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  3 -->
+        <div class="post-box mobile">
+            <img src="images/post-3.jpg" alt="" class="post-img">
+            <h2 class="category">Mobile</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  4 -->
+        <div class="post-box design">
+            <img src="images/post-4.jpg" alt="" class="post-img">
+            <h2 class="category">Design</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  5 -->
+        <div class="post-box tech">
+            <img src="images/post-5.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  6 -->
+        <div class="post-box mobile">
+            <img src="images/post-6.jpg" alt="" class="post-img">
+            <h2 class="category">Mobile</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  7 -->
+        <div class="post-box design">
+            <img src="images/post-7.jpg" alt="" class="post-img">
+            <h2 class="category">Design</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  8 -->
+        <div class="post-box tech">
+            <img src="images/post-8.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create Best UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  9 -->
+        <div class="post-box mpbile">
+            <img src="images/post-9.jpg" alt="" class="post-img">
+            <h2 class="category">Mobile</h2>
+            <a href="post-page.html" class="post-title">
+                How To Create UX Design with Adobe XD
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  10 -->
+        <div class="post-box fashion">
+            <img src="images/post22.avif" alt="" class="post-img">
+            <h2 class="category">Fashion</h2>
+            <a href="post-page.html" class="post-title">
+                Remaining Fashionable
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  11 -->
+        <div class="post-box fashion">
+            <img src="images/post23.jpg" alt="" class="post-img">
+            <h2 class="category">Fashion</h2>
+            <a href="post-page.html" class="post-title">
+                Fashionable Trends to look Modern
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile24.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  12 -->
+        <div class="post-box lifestyle">
+            <img src="images/post24.jpeg" alt="" class="post-img">
+            <h2 class="category">Lifestyle</h2>
+            <a href="post-page.html" class="post-title">
+                Different Types Of Livings
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  13 -->
+        <div class="post-box lifestyle">
+            <img src="images/post25.webp" alt="" class="post-img">
+            <h2 class="category">Lifestyle</h2>
+            <a href="post-page.html" class="post-title">
+                How To Earn a Sophisticated Lifestyle ??
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  14 -->
+        <div class="post-box health">
+            <img src="images/post26.jpg" alt="" class="post-img">
+            <h2 class="category">Health</h2>
+            <a href="post-page.html" class="post-title">
+                How To Earn A Lifestyle for Healthy Living ??
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  15 -->
+        <div class="post-box health">
+            <img src="images/post27.jpg" alt="" class="post-img">
+            <h2 class="category">Health</h2>
+            <a href="post-page.html" class="post-title">
+                Facts for Healthy Living 
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box tech">
+            <img src="images/post28.jpg" alt="" class="post-img">
+            <h2 class="category">tech</h2>
+            <a href="post-page.html" class="post-title">
+                Best Ever Technologies Known in the world
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box tech">
+            <img src="images/post29.jpeg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="post-page.html" class="post-title">
+                How To Learn Blockchain ??
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box business">
+            <img src="images/post30.jpg" alt="" class="post-img">
+            <h2 class="category">Business</h2>
+            <a href="post-page.html" class="post-title">
+                Business Meetings with Executives
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box business">
+            <img src="images/post31.png" alt="" class="post-img">
+            <h2 class="category">Business</h2>
+            <a href="post-page.html" class="post-title">
+                How To Grow and Expand Your Business
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box travel">
+            <img src="images/post32.png" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <a href="post-page.html" class="post-title">
+                Beautiful Places for Tourism
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box travel">
+            <img src="images/post33.png" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <a href="post-page.html" class="post-title">
+                Where to travel in the World ??
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box Food">
+            <img src="images/post34.jpeg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="post-page.html" class="post-title">
+                How To Make New Food Recipes
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+        <!-- Post Box  16 -->
+        <div class="post-box food">
+            <img src="images/post35.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="post-page.html" class="post-title">
+                How To Make Delicious Varieties Of Pizzas
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorean ipsum dolor sit amet consectetur adipisici ad sapiente</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="images/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Marques Brown</span>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="Footer container">
+        <p>&#169;VloggersLife All Rights Reserved</p>
+        <div class="social">
+            <a href="#"><i class="bx bx1-facebook"></i></a>
+            <a href="#"><i class="bx bx1-twitter"></i></a>
+            <a href="#"><i class="bx bx1-instagram"></i></a>
+            <a href="#"><i class="bx bx1-linkedin"></i></a>
+        </div>
+    </div>
 
-let signUpBtn = document.getElementById("signupBtn");
-let signinBtn = document.getElementById("signinBtn");
-let nameField = document.getElementById("nameField");
-let title = document.getElementById("title");
 
 
-signinBtn.onclick = function(){
-    nameField.style.maxHeight = "0";
-    title.innerHTML = "Sign In";
-    signUpBtn.classList.add("disable");
-    signUpBtn.classList.remove("disable");
-    
-}
 
-signupBtn.onclick = function(){
-    nameField.style.maxHeight = "60px";
-    title.innerHTML = "Sign Up";
-    signUpBtn.classList.add("disable");
-    signUpBtn.classList.remove("disable");
-    
-}
-</script>
+    <!-- JQuery Link -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    <!-- Link To JS -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>
